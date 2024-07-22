@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Moon-light cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-custom {
+            background-color: #e1f2e1;
+        }
+        .hero-section {
+            background-image: url(bg-hero.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .btn-custom {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .menu-item img {
+            height: 150px;
+            object-fit: cover;
+        }
+        .location-map {
+            height: 300px;
+            background-image: url(about-2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+       
+        .footer-custom {
+            background-color: #e1f2e1;
+        }
+    </style>
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="The Moon-light" height="100" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">MENU</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section">
+        <div class="hero-content text-center">
+            <h1 class="display-4">Fresh & Delicious</h1>
+            <p class="lead">Experience the taste of nature</p>
+            <a href="menu.html" class="btn btn-custom btn-lg">Order Now</a>
+        </div>
+    </section>
+<!-- 
+    <section class="container my-5">
+        <h2 class="text-center mb-4" style="color: rgb(22, 230, 11);">Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4 menu-item">
+                <div class="card">
+                    <img src="salad.png" class="card-img-top" alt="Garden Salad">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(22, 230, 11);">Garden Salad</h5>
+                        <p class="card-text">Fresh mixed greens with seasonal vegetables.</p>
+                        <p class="card-text"><strong>Price:₹199-399</strong></p>
+                        <a href="menu.html" class="btn btn-custom btn-lg">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 menu-item">
+                <div class="card">
+                    <img src="berry.jpeg" class="card-img-top" alt="Berry Blast Smoothie">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(22, 230, 11);">Berry Blast Smoothie</h5>
+                        <p class="card-text">A refreshing blend of mixed berries and yogurt.</p>
+                        <p class="card-text"><strong>Price:₹69-179</strong></p>
+                        <a href="menu.html" class="btn btn-custom btn-lg">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 menu-item">
+                <div class="card">
+                    <img src="sandwich.jpg" class="card-img-top" alt="Veggie Delight Sandwich">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(22, 230, 11);">Veggie Delight Sandwich</h5>
+                        <p class="card-text">Grilled vegetables on whole grain bread.</p>
+                        <p class="card-text"><strong>Price:₹89-110</strong></p>
+                        <a href="menu.html" class="btn btn-custom btn-lg">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4 menu-item">
+                <div class="card">
+                    <img src="burger.jpg" class="card-img-top" alt="Garden Salad">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(22, 230, 11);">Veg-Burger</h5>
+                        <p class="card-text">Fresh mixed greens with seasonal vegetables.</p>
+                        <p class="card-text"><strong>Price:₹80-120</strong></p>
+                        <a href="menu.html" class="btn btn-custom btn-lg">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-4 mb-4 menu-item">
+            <div class="card">
+                <img src="mojito.jpg" class="card-img-top" alt="Berry Blast Smoothie">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: rgb(22, 230, 11);">Mojito</h5>
+                    <p class="card-text">A refreshing Drinks.</p>
+                    <p class="card-text"><strong>Price:₹149-200</strong></p>
+                    <a href="menu.html" class="btn btn-custom btn-lg">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 menu-item">
+            <div class="card">
+                <img src="wrap.jpg" class="card-img-top" alt="Berry Blast Smoothie">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: rgb(22, 230, 11);">Wrap</h5>
+                    <p class="card-text">Freshly Veggie stuff mixed with cheese.</p>
+                    <p class="card-text"><strong>Price:₹ 109-199</strong></p>
+                    <a href="menu.html" class="btn btn-custom btn-lg">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4 menu-item">
+                <div class="card">
+                    <img src="pizza.jpg" class="card-img-top" alt="Garden Salad">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(22, 230, 11);">Pizza</h5>
+                        <p class="card-text">Fresh mixed greens with seasonal vegetables.</p>
+                        <p class="card-text"><strong>Price:₹199-459</strong></p>
+                        <a href="menu.html" class="btn btn-custom btn-lg">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-4 mb-4 menu-item">
+            <div class="card">
+                <img src="softdrink.jpg" class="card-img-top" alt="Berry Blast Smoothie">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: rgb(22, 230, 11);">Soft Drinks</h5>
+                    <p class="card-text">A refreshing blend.</p>
+                    <p class="card-text"><strong>Price:₹40-99</strong></p>
+                    <a href="menu.html" class="btn btn-custom btn-lg">Order Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 menu-item">
+            <div class="card">
+                <img src="pasta.jpg" class="card-img-top" alt="Berry Blast Smoothie">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: rgb(22, 230, 11);">
+                        Pasta
+                    </h5>
+                    <p class="card-text">Best served in light or creamy sauces.</p>
+                    <p class="card-text"><strong>Price:₹110-149</strong></p>
+                    <a href="menu.html" class="btn btn-custom btn-lg">Order Now</a>
+                </div>
+            </div>
+        </div>
+    
+
+        
+    </section> -->
+
+
+     
+    
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: rgb(22, 230, 11);">About Us</h2>
+            <p class="text-center">The Moon-light is committed to providing fresh, healthy, and delicious food options. Our ingredients are locally sourced, and our menu is designed to cater to various dietary needs and preferences.  At Moonlight, we believe that great coffee and food can brighten any hour of the day. Our carefully curated menu features:
+
+                Artisanal coffee and espresso drinks
+                A wide selection of teas
+                Fresh pastries and baked goods
+                Light breakfast and lunch options
+                Evening small plates and desserts
+                
+                We source our coffee beans from responsible, sustainable farms and work with local suppliers to bring you the freshest ingredients possible.</p>
+        </div>
+    </section>
+
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4" style="color: rgb(22, 230, 11);">Our Location</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="location-map rounded"></div>
+            </div>
+            <div class="col-md-6">
+                <h3>Visit Us</h3>
+                <p>123 Green Street, Chandigarh</p>
+                <p>Open Monday - Saturday: 9:00 AM - 9:00 PM</p>
+                <p>Sunday: 10:00 AM - 8:00 PM</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@themoonlight.com</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-custom py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 style="color: rgb(22, 230, 11);">Contact Us</h5>
+                    <p>123 Green Street, Chandigarh<br>Phone: (555) 123-4567<br>Email: info@themoonlight.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="color: rgb(22, 230, 11);">Quick Links</h5>
+                    <ul class="list-unstyled" style="color: rgb(22, 230, 11);">
+                        <a href="#home" >Home</a>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about" >About Us</a></li>
+                        <li><a href="#contact" >Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 style="color: rgb(22, 230, 11);">Follow Us</h5>
+                    <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2024 The Moon-light. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Moon-light</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar-custom {
+            background-color: #e1f2e1;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .btn-custom {
+            background-color: #4CAF50;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,.1);
+        }
+        .mb-3 label {
+            color: #4CAF50;
+            font-weight: 600;
+        }
+        .footer-custom {
+            background-color: #e1f2e1;
+            color: #333;
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #4CAF50;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="The Moon-light" height="100" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4" style="color: #45a049;">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-container">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactNumber" class="form-label">Contact Number</label>
+                            <input type="tel" class="form-control" id="contactNumber" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rating" class="form-label">Rating</label>
+                            <select class="form-select" id="rating" required>
+                                <option value="">Select a rating</option>
+                                <option value="1">1 - Poor</option>
+                                <option value="2">2 - Fair</option>
+                                <option value="3">3 - Good</option>
+                                <option value="4">4 - Very Good</option>
+                                <option value="5">5 - Excellent</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="location" required>
+                        </div>
+                        <button type="submit" class="btn btn-custom w-100">Submit Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-custom py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-success">Contact Us</h5>
+                    <p>123 Green Street, Chandigarh<br>Phone: (555) 123-4567<br>Email: info@themoonlight.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-success">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-dark">Home</a></li>
+                        <li><a href="#menu" class="text-dark">Menu</a></li>
+                        <li><a href="#about" class="text-dark">About Us</a></li>
+                        <li><a href="#contact" class="text-dark">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-success">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2024 The Moon-light. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

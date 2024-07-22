@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Moon-light cafe - Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-custom {
+            background-color: #e1f2e1;
+        }
+        .btn-custom {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .menu-item img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer-custom {
+            background-color: #e1f2e1;
+        }
+        .menu-category h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="The Moon-light" height="100" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            HOME</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cart">
+                            <i class="bi bi-cart3"></i> Cart
+                            <span class="badge bg-success rounded-pill cart-badge" id="cartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-5 text-success">Our Menu</h1>
+
+        <div class="menu-category mb-5">
+            <h2 class="mb-4">Main Courses</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="salad.jpg" class="card-img-top" alt="Garden Salad" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Garden Salad</h5>
+                            <p class="card-text">Fresh mixed greens with seasonal vegetables.</p>
+                            <p class="card-text"><strong>Price: ₹199-399</strong></p>
+                           <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                 <a href="contact.html">Add to Cart</a>
+                           </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="sandwich.jpg" class="card-img-top" alt="Veggie Delight Sandwich" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Veggie Delight Sandwich</h5>
+                            <p class="card-text">Grilled vegetables on whole grain bread.</p>
+                            <p class="card-text"><strong>Price: ₹89-110</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="burger.jpg" class="card-img-top" alt="Veg-Burger" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Veg-Burger</h5>
+                            <p class="card-text">Fresh mixed greens with seasonal vegetables.</p>
+                            <p class="card-text"><strong>Price: ₹80-120</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="wrap.jpg" class="card-img-top" alt="Veg-Burger" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Wrap</h5>
+                            <p class="card-text">Fresh mixed greens with seasonal vegetables.</p>
+                            <p class="card-text"><strong>Price: ₹79-120</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="pasta.jpg" class="card-img-top" alt="Veg-Burger" height="300px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Pasta</h5>
+                            <p class="card-text">Fresh mixed greens with seasonal vegetables.</p>
+                            <p class="card-text"><strong>Price: ₹69-120</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="spring.jpg" class="card-img-top" alt="Veg-Burger">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Spring-Role</h5>
+                            <p class="card-text">Made up with the preparation of fresh vegetable and roll over thin layer of dough prepared with all purpose flour. </p>
+                            <p class="card-text"><strong>Price: ₹40-120</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category mb-5">
+            <h2 class="mb-4">Beverages</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="berry.jpeg" class="card-img-top" alt="Berry Blast Smoothie" height="400px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Berry Blast Smoothie</h5>
+                            <p class="card-text">A refreshing blend of mixed berries and yogurt.</p>
+                            <p class="card-text"><strong>Price: ₹69-179</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="mo.jpg" class="card-img-top" alt="Mojito" height="400px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Mojito</h5>
+                            <p class="card-text">A refreshing drink with flavoured seasoning of mint, blueberry or watermelon.</p>
+                            <p class="card-text"><strong>Price: ₹149-200</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="softdrink.jpg" class="card-img-top" alt="Soft Drinks" height="400px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Soft Drinks</h5>
+                            <p class="card-text">Packaged drinks with refreshing blend.</p>
+                            <p class="card-text"><strong>Price: ₹49-109</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="cocktail.jpg" class="card-img-top" alt="Soft Drinks" height="400px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Cocktails</h5>
+                            <p class="card-text">Freshly made british summertime drink with cool breeze.</p>
+                            <p class="card-text"><strong>Price: ₹109-149</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="juice.jpg" class="card-img-top" alt="Soft Drinks" height="400px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Juices</h5>
+                            <p class="card-text">A refreshing blend prepared with extraction of fresh fruits.</p>
+                            <p class="card-text"><strong>Price: ₹35-105</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="energy drinks.jpg" class="card-img-top" alt="Soft Drinks" height="400px">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Energy Drinks</h5>
+                            <p class="card-text">A refreshing beverage prepared with high caffeine amount and re-boosts energy. </p>
+                            <p class="card-text"><strong>Price: ₹120-350</strong></p>
+                            <button type="button" class="bi bi-cart4" style="color: #4CAF50;">
+                                <a href="contact.html">Add to Cart</a>
+                               </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-custom py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-success">Contact Us</h5>
+                    <p>123 Green Street,Chandigarh<br>Phone: (555) 123-4567<br>Email: info@themoonlight.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-success">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-success">Home</a></li>
+                        <li><a href="#" class="text-decoration-none text-success">Menu</a></li>
+                        <li><a href="#" class="text-decoration-none text-success">About Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-success">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-success">Follow Us</h5>
+                    <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2024 The Moon-light. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
